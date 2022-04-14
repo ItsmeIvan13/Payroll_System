@@ -1,0 +1,137 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+     background: #5EE6EB;
+}
+
+.h1_title{
+    
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    
+}
+
+.my_form{
+    
+    padding-left: 100px;
+}
+
+.description{
+
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.input{
+    
+    padding: 15px;
+    margin: 5px 0 10px 0;
+    width: 150px;
+    border: none;
+    background: #f1f1f1;
+}
+
+.days{
+    padding: 15px;
+    margin: 5px 0 10px 0;
+    width: 10px;
+    border: none;
+    background: #f1f1f1;
+
+}
+
+.btn_1{
+    border: none;
+    padding: 14px 30px;
+    background-color: #04AA6D;
+    color: white;
+    font-size: medium;
+    
+}
+
+.btn_1:hover{
+    cursor: pointer;
+}
+
+.delete_btn1{
+    border: none;
+    padding: 14px 30px;
+    background-color: red;
+    color: white;
+    font-size: medium;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.result{
+    border-radius: 20px;
+    height: 300px;
+    width: 380px;
+    margin-left: 50px;
+    background: #f1f1f1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+@media only screen and (min-width: 768px){
+    .h1_title{
+
+        padding-top: 50px;
+        text-align: center;
+        font-family: 'Kanit', sans-serif;
+        
+    }
+
+    .my_form{
+        width: 100%;
+        padding-left: 250px;
+        
+        
+    }
+    
+    .input{
+        
+        width: 250px;
+        
+    }
+    
+
+    .result{
+        margin-left: 100px;
+        
+    }
+
+}
+
+@media only screen and (min-width: 1000px){
+    .h1_title{
+    
+        padding-top: 50px;
+        text-align: center;
+        font-family: 'Kanit', sans-serif;
+        
+    }
+
+    .my_form{
+        
+        padding-left: 600px;
+        
+    }
+    
+    .input{
+        width: 300px;
+    }
+
+    .result{
+        margin-left: 500px;
+        width: 500px;
+    }
+
+    
+}
+
+

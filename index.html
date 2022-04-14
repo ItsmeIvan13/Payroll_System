@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="function.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1 class="h1_title">Payroll System</h1><br><br> 
+        <form class="my_form">
+            <label class="description">First Name</label><br>
+            <input type="text" id="Fname" placeholder="Enter your First Name" class="input" required> </input><br><br>
+
+            <label class="description">Middle Initial</label><br>
+            <input type="text" id="Mname" placeholder="Enter your Middle Initial" maxlength="1" class="input" required> </input><br><br>
+
+            <label class="description">Last Name</label><br>
+            <input type="text" id="Lname" placeholder="Enter your Last Name" class="input" required> </input><br><br>
+
+            <label class="description">Choose your Job</label><br><br>
+            <input type="radio" id="job_Sprog" name="your_work" value="Senior Programmer"> Senior Programmer</input><br><br>
+  
+
+            <input type="radio" id="job_Jprog" name="your_work"  value="Junior Programmer"> Junior Programmer</input><br><br>
+            
+
+            <input type="radio" id="job_Web" name="your_work"  value="Web Designer"> Web Designer</input><br><br>
+            
+
+            <input type="radio" id="job_Data" name="your_work"  value="Data Analyst"> Data Analyst</input><br><br>
+            
+
+            <input type="radio" id="job_Pm"  name="your_work" value="Project Manager"> Project Manager</input><br><br>
+            
+            <label class="description">Number of Days Worked</label><br>
+            <input type="text" id="days_work" placeholder="Enter your number days worked" maxlength="2" style="width: 200px" class="days"></input><br><br>
+            
+            <Button type="button" id="button_Job" onclick="getmyJob()" class="btn_1">Total</Button> 
+            <Button type="button" id="delete_btn" onclick="Delete_Button()" class="delete_btn1">Clear</Button>
+
+        </form><br>
+
+        <div class="result" id="myinfo" value="info">
+        
+        </div>
+
+
+    </section>
+    
+</body>
+</html>
