@@ -9,41 +9,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="function.js"></script>
-    <title>Document</title>
+    <title>Payroll System</title>
 </head>
 <body>
     <section>
-        <h1 class="h1_title">Payroll System</h1><br><br> 
-        <form class="my_form">
-            <label class="description">First Name</label><br>
-            <input type="text" id="Fname" placeholder="Enter your First Name" class="input" required> </input><br><br>
+        <h1 class="h1_title">Payroll System</h1><br>
+        <form class="my_form" method="dialog">
+            <label class="description">First Name</label>
+            <input type="text" id="Fname" placeholder="Enter your First Name" class="input"><br>
 
-            <label class="description">Middle Initial</label><br>
-            <input type="text" id="Mname" placeholder="Enter your Middle Initial" maxlength="1" class="input" required> </input><br><br>
+            <label class="description">Middle Initial</label>
+            <input type="text" id="Mname" placeholder="Enter your Middle Initial" maxlength="1" class="input"><br>
 
-            <label class="description">Last Name</label><br>
-            <input type="text" id="Lname" placeholder="Enter your Last Name" class="input" required> </input><br><br>
+            <label class="description">Last Name</label>
+            <input type="text" id="Lname" placeholder="Enter your Last Name" class="input"><br>
 
-            <label class="description">Choose your Job</label><br><br>
-            <input type="radio" id="job_Sprog" name="your_work" value="Senior Programmer"> Senior Programmer</input><br><br>
-  
+            <label class="description">Choose your Job</label><br>
+            <div class="choices-list">
+                <div class="choice">
+                    <input type="radio" id="job_Sprog" name="your_work" value="Senior Programmer"> Senior Programmer
+                </div>
+                <div class="choice">
+                    <input type="radio" id="job_Jprog" name="your_work"  value="Junior Programmer"> Junior Programmer
+                </div>
+                <div class="choice">
+                    <input type="radio" id="job_Web" name="your_work"  value="Web Designer"> Web Designer
+                </div>
+                <div class="choice">
+                    <input type="radio" id="job_Data" name="your_work"  value="Data Analyst"> Data Analyst
+                </div>
+                <div class="choice">
+                    <input type="radio" id="job_Pm"  name="your_work" value="Project Manager"> Project Manager
+                </div>
+            </div>
 
-            <input type="radio" id="job_Jprog" name="your_work"  value="Junior Programmer"> Junior Programmer</input><br><br>
-            
-
-            <input type="radio" id="job_Web" name="your_work"  value="Web Designer"> Web Designer</input><br><br>
-            
-
-            <input type="radio" id="job_Data" name="your_work"  value="Data Analyst"> Data Analyst</input><br><br>
-            
-
-            <input type="radio" id="job_Pm"  name="your_work" value="Project Manager"> Project Manager</input><br><br>
-            
+            <br><br>
             <label class="description">Number of Days Worked</label><br>
-            <input type="text" id="days_work" placeholder="Enter your number days worked" maxlength="2" style="width: 200px" class="days"></input><br><br>
+            <input type="number" id="days_work" placeholder="Enter your number days worked" maxlength="2" class="days"><br>
             
-            <Button type="button" id="button_Job" onclick="getmyJob()" class="btn_1">Total</Button> 
-            <Button type="button" id="delete_btn" onclick="Delete_Button()" class="delete_btn1">Clear</Button>
+            <div class="buttons">
+                <button onclick="getmyJob()" id="button_Job" class="submit_btn btn">Total</button>
+                <input type="reset" value="Clear" id="delete_bztn" class="delete_btn btn">
+            </div>
 
         </form><br>
 
