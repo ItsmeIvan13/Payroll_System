@@ -112,13 +112,12 @@
     
             Myinfo.innerHTML = "<br><br>" + Firstname.value + " " + Middlename.value + middlename_period + Lastname.value + "<br> Your Job is: " + ProjectManager.value +"<br><br> ----- DEDUCTION ----- <br> SSS: 5%<br> Pag ibig: 5%<br> Philhealth: 100 <br> -------------------- <br> Total Salary: "+  total.toFixed(0) + " " + "PHP";
         }
-    
         else{ 
             alert("Click Choices above");
         }
         //condition if the user checked senior programming job it will true and proceed the total salary of user
     }
-3}
+}
 /*
 function Delete_Button(){
         var Firstname = document.getElementById('Fname').value = ""; // clear input in text box
