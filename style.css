@@ -51,15 +51,12 @@ body {
     border: none;
     background: #f1f1f1;
 }
-input {
-    border-radius: 10px;
-}
-.btn {
+.input, .days {
     border-radius: 10px;
 }
 
-.btn_1:hover{
-    cursor: pointer;
+.btn {
+    border-radius: 10px;
 }
 
 .submit_btn{
@@ -77,6 +74,9 @@ input {
     font-size: medium;
     cursor: pointer;
 }
+.submit_btn:hover {
+    cursor: pointer;
+}
 .result{
     border-radius: 20px;
     height: 300px;
@@ -92,7 +92,6 @@ input {
         max-width: 400px;
     }
 }
-
 
 @media only screen and (min-width: 768px){
     .h1_title{
