@@ -118,8 +118,9 @@
         //condition if the user checked senior programming job it will true and proceed the total salary of user
     }
 }
-/*
+
 function Delete_Button(){
+    /*
         var Firstname = document.getElementById('Fname').value = ""; // clear input in text box
         var Middlename = document.getElementById('Mname').value = "";
         var Lastname = document.getElementById('Lname').value = "";
@@ -130,4 +131,6 @@ function Delete_Button(){
         var job_Web = document.getElementById('job_Web').checked = false;
         var job_Data = document.getElementById('job_Data').checked = false;
         var job_Pm = document.getElementById('job_Pm').checked = false;
-}*/
+        */
+    document.getElementById('myinfo').innerHTML="";
+}
